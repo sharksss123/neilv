@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #ffffff; /* White background */
+  z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  font-weight: bold;
+  color: #000000; /* Black text on hover */
+  
+  transition: all 0.4s ease;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.navbar .navbar-brand:hover {
+  color: #000000; /* Black text on hover */
+  text-shadow: 0 0 5px #d1cbcb; /* Black shadow on hover */
+  transition: all 0.4s ease;
+}
+
+.navbar .navbar-brand {
+  color: #000000; /* Black text */
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000; /* Black text */
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+  background-color: #000000; /* Black background for active link */
+  border-radius: 10px;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+}
+
+.color-dark {
+  color: #000000; /* Dark (black) text */
+}

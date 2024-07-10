@@ -1,0 +1,76 @@
+#about-info {
+  min-height: 35vh;
+  background-image: url('./img/5392092.jpg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative; /* Ensures that absolutely positioned children are positioned relative to this container */
+  overflow: hidden; /* Prevents the snowflakes from causing a scroll */
+}
+
+.snowflake {
+  position: absolute;
+  top: 0;
+  width: 30px; /* Increase size of the hexagon */
+  height: 30px; /* Increase size of the hexagon */
+  background-color: rgba(255, 255, 255, 0.7); /* Light white color for the snowflake */
+  clip-path: polygon(
+    50% 0%, 100% 25%, 100% 75%, 
+    50% 100%, 0% 75%, 0% 25%
+  ); /* Creates a hexagon shape */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 25px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.2); /* Glow effect */
+  pointer-events: none; /* Ensures the snowflake does not affect user interaction with other elements */
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+}
+
+.snowflake:nth-child(1) { left: 10%; animation-duration: 3s; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 20%; animation-duration: 4s; animation-delay: 1s; }
+.snowflake:nth-child(3) { left: 30%; animation-duration: 5s; animation-delay: 2s; }
+.snowflake:nth-child(4) { left: 40%; animation-duration: 3.5s; animation-delay: 1.5s; }
+.snowflake:nth-child(5) { left: 50%; animation-duration: 4.5s; animation-delay: 0.5s; }
+.snowflake:nth-child(6) { left: 60%; animation-duration: 6s; animation-delay: 2.5s; }
+.snowflake:nth-child(7) { left: 70%; animation-duration: 5.5s; animation-delay: 1s; }
+.snowflake:nth-child(8) { left: 80%; animation-duration: 4s; animation-delay: 3s; }
+.snowflake:nth-child(9) { left: 90%; animation-duration: 3.5s; animation-delay: 1.5s; }
+.snowflake:nth-child(10) { left: 95%; animation-duration: 5s; animation-delay: 2s; }
+
+
+#about img {
+  width: 300px;
+ border-radius: 2px;
+  box-shadow: 5px 8px 6px #0b094d;
+  transition: transform 0.5s ease;
+  border: 3px solid rgb(24, 0, 68);
+}
+
+#about img:hover {
+  transform: scale(1.1667); /* This scales the image from 300px to 350px (350/300 = 1.1667) */
+}
+
+#about span:hover {
+  color: #1622c9;
+  filter: drop-shadow(0 0 0.75rem purple);
+  text-shadow: 0 0 20px purple, 0 0 40px purple;
+  transition: all 0.4s ease;
+}
+
+#about span {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(250, 249, 251);
+}
+
+.bg-pink {
+  background-color: #ff69b4; /* Adjust the color as needed */
+}
+
+.border-black {
+  border: 1px solid #000000; /* Black border */
+}
+
+

@@ -1,0 +1,65 @@
+body {
+  background-color: #f5f5f5; /* Light gray background for the page */
+}
+
+#contact-info {
+  min-height: 100vh;
+  background-color: #ffffff; /* White background for the contact section */
+  padding-top: 60px; /* Adjust based on your navbar height */
+}
+
+.contact-form .form-control {
+  margin-bottom: 1rem;
+  border: 1px solid #000; /* Black border */
+  background-color: #ffffff; /* White background for the input fields */
+  color: #000; /* Black text color */
+}
+
+.contact-form .btn {
+  display: block;
+  width: 100%;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Animation for the button */
+}
+
+.contact-form .btn:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.social-icons a {
+  color: #000; /* Black color for social icons */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #555; /* Lighter black on hover */
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.tiktok:hover {
+  color: #555; /* Lighter black on hover for all social icons */
+}
+
+.card {
+  background-color: #fff; /* White background for the card */
+  border: 1px solid #000; /* Black border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  border-radius: 10px; /* Rounded corners for the card */
+  padding: 2rem; /* Padding inside the card */
+}
+
+.card h2 {
+  color: #000; /* Black color for the card title */
+}
+
+.socila-section {
+  padding-top: 50px;
+}
+
+.me-4 {
+  margin-right: 1.5rem; /* Margin for spacing between social icons */
+}
